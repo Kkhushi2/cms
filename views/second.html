@@ -1,0 +1,28 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script>
+$.getJSON('https://jsonplaceholder.typicode.com/todos',{ajax:true},function(data){
+console.log(data);    
+data.forEach((item,index)=>{
+$('#category').append($("<option>").text(item.title).val(item.id));
+
+
+}
+)
+ 
+
+ 
+ $("#category").change(function(){
+    alert($("#category").val())
+})
+
+})
+
+</script>
+<html>
+<select id="category">
+    <option>Select Category</option>
+</select>
+
+
+</html>

@@ -1,0 +1,93 @@
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".carousel");
+      var instances = M.Carousel.init(elems);
+    });
+    
+    var instance = M.Carousel.init({
+      fullWidth: true,
+      indicators: true,
+    });
+  </script>
+  <body>
+<nav style="background-color:#84817a">
+    <div class="nav-wrapper">
+
+        <ul id="nav-mobile" class="left"  >
+            <li>
+        <a href="#"><img src="/images/syntra.png" style="padding:10px;width:70px ;" ></a>
+          </li>
+            <%data.forEach((item,index)=>{%>
+                <li>
+                    <a >   
+                   <font color="white"><b><%=item.categoryname%></b></font> </a>
+                </li>
+                <%})%>
+                <li>
+                    <div
+                      class="col s12"
+                      style="
+                        display: flex;
+                        justify-content: center;
+                        width: 600px;
+                        margin-left: 230px;
+                      "
+                    >
+                      <i class="material-icons prefix" style="margin-right: 10px"
+                        >search</i
+                      >
+                      <input
+                        id="icon_prefix"
+                        type="text"
+                        class="validate"
+                        placeholder="Search..."
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="material-icons" style="line-height: 2.5">
+                        account_circle
+                      </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="material-icons" style="line-height: 2.5">
+                        favorite_border
+                      </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="material-icons" style="line-height: 2.5">
+                        shopping_bag
+                      </span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"
+                  ><img src="//img.ltwebstatic.com/images3_ach/2022/07/25/16587169898ca5ecc512247304ea35ed88ed833a4c.gif" data-src="//img.ltwebstatic.com/images3_ach/2022/07/25/16587169898ca5ecc512247304ea35ed88ed833a4c.gif" alt="" class="falcon-lazyload j-index-banner" data-loaded="true">
+                </a>
+                <a class="carousel-item" href="#two!"
+                  ><img src="//img.ltwebstatic.com/images3_ach/2022/07/25/165874091065a8c42ee491d39b0197ecbca03f6a67.webp" data-src="//img.ltwebstatic.com/images3_ach/2022/07/25/165874091065a8c42ee491d39b0197ecbca03f6a67.jpg" alt="" class="falcon-lazyload j-index-banner" data-loaded="true"></a>
+                <a class="carousel-item" href="#three!"
+                  ><img
+                    src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/9be788ff-39a4-4214-99d0-fc97505aae5a1658752545685-USPA_Desk_Banner.jpg"
+                /></a>
+              </div>
+              <img src="//img.ltwebstatic.com/images3_ach/2022/07/25/16587172287210c9c1de82c55eecaec7755c32bcae.gif" data-src="//img.ltwebstatic.com/images3_ach/2022/07/25/16587172287210c9c1de82c55eecaec7755c32bcae.gif" alt="" class="falcon-lazyload j-index-banner" data-loaded="true" width="1400px">
+            </body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
